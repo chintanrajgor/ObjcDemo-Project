@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 //IBOutlets
 @property (weak, nonatomic) IBOutlet UICollectionView *homeProductListCollectionView;
 @property (weak, nonatomic) NSArray<ProductsData *> *productsList;
+@property (strong,nonatomic) void (^cellTappedHandler)(NSNumber*);
 
 //Functions
 - (void) configureCellWithProductList: (NSArray<ProductsData *>*) productList;

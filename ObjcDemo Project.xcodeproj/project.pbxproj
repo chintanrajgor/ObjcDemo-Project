@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18578B572BC42E10009C6585 /* ProductDetailsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18578B562BC42E10009C6585 /* ProductDetailsService.m */; };
 		18732E212BBACCB8000C0CA8 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18732E1F2BBACCB8000C0CA8 /* TabBarVC.m */; };
 		18732E222BBACCB8000C0CA8 /* TabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18732E202BBACCB8000C0CA8 /* TabBarVC.xib */; };
 		18732E292BBAD30C000C0CA8 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18732E272BBAD30C000C0CA8 /* HomeVC.m */; };
@@ -30,6 +31,10 @@
 		18A01C8A2B95CB580033EF21 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A01C892B95CB580033EF21 /* LoginService.m */; };
 		18A01C912B95EBBD0033EF21 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A01C902B95EBBD0033EF21 /* User.m */; };
 		18A0519B2BAD60C5004A02D7 /* RegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0519A2BAD60C5004A02D7 /* RegisterService.m */; };
+		18A4EFE42BD7837B00B766CF /* RateNowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4EFE22BD7837B00B766CF /* RateNowVC.m */; };
+		18A4EFE52BD7837B00B766CF /* RateNowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A4EFE32BD7837B00B766CF /* RateNowVC.xib */; };
+		18A4EFE92BD7838C00B766CF /* AddToCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4EFE72BD7838C00B766CF /* AddToCartVC.m */; };
+		18A4EFEA2BD7838C00B766CF /* AddToCart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A4EFE82BD7838C00B766CF /* AddToCart.xib */; };
 		18A6B2A72B91DC9F000E3209 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6B2A52B91DC9F000E3209 /* RegisterVC.m */; };
 		18A6B2A82B91DC9F000E3209 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A6B2A62B91DC9F000E3209 /* RegisterVC.xib */; };
 		18A6B2AE2B91DE41000E3209 /* TextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6B2AC2B91DE41000E3209 /* TextFieldTableViewCell.m */; };
@@ -57,6 +62,12 @@
 		18BA052D2BC02E3F0028AC93 /* RatingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA052B2BC02E3F0028AC93 /* RatingCollectionViewCell.xib */; };
 		18BAF3A72BB2CBAC004D181E /* OTPVerificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAF3A52BB2CBAC004D181E /* OTPVerificationVC.m */; };
 		18BAF3A82BB2CBAC004D181E /* OTPVerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BAF3A62BB2CBAC004D181E /* OTPVerificationVC.xib */; };
+		18BD58C52BD0EC7300CC6916 /* ProductDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD58C32BD0EC7300CC6916 /* ProductDetailsTableViewCell.m */; };
+		18BD58C62BD0EC7300CC6916 /* ProductDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD58C42BD0EC7300CC6916 /* ProductDetailsTableViewCell.xib */; };
+		18C786C92BD63BAC006CF31E /* ProductDetailsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C786C82BD63BAC006CF31E /* ProductDetailsFooterView.xib */; };
+		18C786CC2BD63CE7006CF31E /* ProductDetailsFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C786CB2BD63CE7006CF31E /* ProductDetailsFooterView.m */; };
+		18C786D12BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C786CF2BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.m */; };
+		18C786D22BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C786D02BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.xib */; };
 		18E029CF2BBD32AD0085A330 /* HomeCategoriesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E029CD2BBD32AD0085A330 /* HomeCategoriesTableViewCell.m */; };
 		18E029D02BBD32AD0085A330 /* HomeCategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E029CE2BBD32AD0085A330 /* HomeCategoriesTableViewCell.xib */; };
 		18E029D52BBD33550085A330 /* HomeProductListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E029D32BBD33550085A330 /* HomeProductListCollectionViewCell.m */; };
@@ -103,6 +114,8 @@
 /* Begin PBXFileReference section */
 		16E46762C9E07A99CEED1943 /* Pods_ObjcDemo_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcDemo_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		183DE7CF2BAC5E130053C061 /* ParseIntoModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseIntoModel.framework; path = "../../../Library/Developer/Xcode/DerivedData/ParseIntoModel-cjvtbtzywtliiugqppihctrhuzlh/Build/Products/Debug-iphoneos/ParseIntoModel.framework"; sourceTree = "<group>"; };
+		18578B552BC42E10009C6585 /* ProductDetailsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailsService.h; sourceTree = "<group>"; };
+		18578B562BC42E10009C6585 /* ProductDetailsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsService.m; sourceTree = "<group>"; };
 		18732E1E2BBACCB8000C0CA8 /* TabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
 		18732E1F2BBACCB8000C0CA8 /* TabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
 		18732E202BBACCB8000C0CA8 /* TabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarVC.xib; sourceTree = "<group>"; };
@@ -144,6 +157,12 @@
 		18A01C922B95EE250033EF21 /* Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Validation.h; sourceTree = "<group>"; };
 		18A051992BAD60C5004A02D7 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterService.h; sourceTree = "<group>"; };
 		18A0519A2BAD60C5004A02D7 /* RegisterService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterService.m; sourceTree = "<group>"; };
+		18A4EFE12BD7837B00B766CF /* RateNowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateNowVC.h; sourceTree = "<group>"; };
+		18A4EFE22BD7837B00B766CF /* RateNowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateNowVC.m; sourceTree = "<group>"; };
+		18A4EFE32BD7837B00B766CF /* RateNowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateNowVC.xib; sourceTree = "<group>"; };
+		18A4EFE62BD7838C00B766CF /* AddToCartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToCartVC.h; sourceTree = "<group>"; };
+		18A4EFE72BD7838C00B766CF /* AddToCartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddToCartVC.m; sourceTree = "<group>"; };
+		18A4EFE82BD7838C00B766CF /* AddToCart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddToCart.xib; sourceTree = "<group>"; };
 		18A6B2A42B91DC9F000E3209 /* RegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		18A6B2A52B91DC9F000E3209 /* RegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 		18A6B2A62B91DC9F000E3209 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
@@ -187,6 +206,15 @@
 		18BAF3A42BB2CBAC004D181E /* OTPVerificationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTPVerificationVC.h; sourceTree = "<group>"; };
 		18BAF3A52BB2CBAC004D181E /* OTPVerificationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTPVerificationVC.m; sourceTree = "<group>"; };
 		18BAF3A62BB2CBAC004D181E /* OTPVerificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVerificationVC.xib; sourceTree = "<group>"; };
+		18BD58C22BD0EC7300CC6916 /* ProductDetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailsTableViewCell.h; sourceTree = "<group>"; };
+		18BD58C32BD0EC7300CC6916 /* ProductDetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsTableViewCell.m; sourceTree = "<group>"; };
+		18BD58C42BD0EC7300CC6916 /* ProductDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		18C786C82BD63BAC006CF31E /* ProductDetailsFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsFooterView.xib; sourceTree = "<group>"; };
+		18C786CA2BD63CE7006CF31E /* ProductDetailsFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailsFooterView.h; sourceTree = "<group>"; };
+		18C786CB2BD63CE7006CF31E /* ProductDetailsFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsFooterView.m; sourceTree = "<group>"; };
+		18C786CE2BD691B6006CF31E /* ProductDetailsImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailsImageCollectionViewCell.h; sourceTree = "<group>"; };
+		18C786CF2BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsImageCollectionViewCell.m; sourceTree = "<group>"; };
+		18C786D02BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		18E029CC2BBD32AD0085A330 /* HomeCategoriesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCategoriesTableViewCell.h; sourceTree = "<group>"; };
 		18E029CD2BBD32AD0085A330 /* HomeCategoriesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCategoriesTableViewCell.m; sourceTree = "<group>"; };
 		18E029CE2BBD32AD0085A330 /* HomeCategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoriesTableViewCell.xib; sourceTree = "<group>"; };
@@ -498,6 +526,42 @@
 			path = RegisterService;
 			sourceTree = "<group>";
 		};
+		18A4EFDB2BD782F800B766CF /* RateNow */ = {
+			isa = PBXGroup;
+			children = (
+				18A4EFDD2BD7834A00B766CF /* View */,
+			);
+			path = RateNow;
+			sourceTree = "<group>";
+		};
+		18A4EFDC2BD7830F00B766CF /* AddToCart */ = {
+			isa = PBXGroup;
+			children = (
+				18A4EFE02BD7836300B766CF /* View */,
+			);
+			path = AddToCart;
+			sourceTree = "<group>";
+		};
+		18A4EFDD2BD7834A00B766CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A4EFE12BD7837B00B766CF /* RateNowVC.h */,
+				18A4EFE22BD7837B00B766CF /* RateNowVC.m */,
+				18A4EFE32BD7837B00B766CF /* RateNowVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A4EFE02BD7836300B766CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A4EFE62BD7838C00B766CF /* AddToCartVC.h */,
+				18A4EFE72BD7838C00B766CF /* AddToCartVC.m */,
+				18A4EFE82BD7838C00B766CF /* AddToCart.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18A6B2A12B91DC69000E3209 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -748,6 +812,9 @@
 		18BA05192BC024200028AC93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18A4EFDC2BD7830F00B766CF /* AddToCart */,
+				18A4EFDB2BD782F800B766CF /* RateNow */,
+				18BD58BE2BD0EB8900CC6916 /* Cells */,
 				18BA051C2BC0244F0028AC93 /* ProductDetailsVC.h */,
 				18BA051D2BC0244F0028AC93 /* ProductDetailsVC.m */,
 				18BA051E2BC0244F0028AC93 /* ProductDetailsVC.xib */,
@@ -776,6 +843,8 @@
 		18BA05242BC024810028AC93 /* ProductDetailsService */ = {
 			isa = PBXGroup;
 			children = (
+				18578B552BC42E10009C6585 /* ProductDetailsService.h */,
+				18578B562BC42E10009C6585 /* ProductDetailsService.m */,
 			);
 			path = ProductDetailsService;
 			sourceTree = "<group>";
@@ -812,6 +881,46 @@
 				18BAF3A62BB2CBAC004D181E /* OTPVerificationVC.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		18BD58BE2BD0EB8900CC6916 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18C786CD2BD6914B006CF31E /* ProductDetailsImageCell */,
+				18C786C72BD63B7B006CF31E /* ProductDetailsFooterView */,
+				18C786C62BD63B68006CF31E /* ProductDetailsTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18C786C62BD63B68006CF31E /* ProductDetailsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18BD58C22BD0EC7300CC6916 /* ProductDetailsTableViewCell.h */,
+				18BD58C32BD0EC7300CC6916 /* ProductDetailsTableViewCell.m */,
+				18BD58C42BD0EC7300CC6916 /* ProductDetailsTableViewCell.xib */,
+			);
+			path = ProductDetailsTableViewCell;
+			sourceTree = "<group>";
+		};
+		18C786C72BD63B7B006CF31E /* ProductDetailsFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				18C786C82BD63BAC006CF31E /* ProductDetailsFooterView.xib */,
+				18C786CA2BD63CE7006CF31E /* ProductDetailsFooterView.h */,
+				18C786CB2BD63CE7006CF31E /* ProductDetailsFooterView.m */,
+			);
+			path = ProductDetailsFooterView;
+			sourceTree = "<group>";
+		};
+		18C786CD2BD6914B006CF31E /* ProductDetailsImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				18C786CE2BD691B6006CF31E /* ProductDetailsImageCollectionViewCell.h */,
+				18C786CF2BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.m */,
+				18C786D02BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.xib */,
+			);
+			path = ProductDetailsImageCell;
 			sourceTree = "<group>";
 		};
 		18E029CA2BBD32570085A330 /* Cells */ = {
@@ -996,12 +1105,16 @@
 				18E029D62BBD33550085A330 /* HomeProductListCollectionViewCell.xib in Resources */,
 				18AB90E62B9884AC00F174E3 /* RegisterHeaderView.xib in Resources */,
 				1878F8032BAADAE9007FA01E /* SubmitButtonTableViewCell.xib in Resources */,
+				18C786D22BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.xib in Resources */,
 				18732E222BBACCB8000C0CA8 /* TabBarVC.xib in Resources */,
+				18C786C92BD63BAC006CF31E /* ProductDetailsFooterView.xib in Resources */,
 				18B76CB12B91B05D00F6A373 /* LaunchScreen.storyboard in Resources */,
 				18BA05202BC0244F0028AC93 /* ProductDetailsVC.xib in Resources */,
 				18732E2F2BBAD323000C0CA8 /* ProfileVC.xib in Resources */,
 				18A6B2AF2B91DE41000E3209 /* TextFieldTableViewCell.xib in Resources */,
+				18BD58C62BD0EC7300CC6916 /* ProductDetailsTableViewCell.xib in Resources */,
 				18732E2A2BBAD30C000C0CA8 /* HomeVC.xib in Resources */,
+				18A4EFEA2BD7838C00B766CF /* AddToCart.xib in Resources */,
 				18B76CAE2B91B05D00F6A373 /* Assets.xcassets in Resources */,
 				18E029D02BBD32AD0085A330 /* HomeCategoriesTableViewCell.xib in Resources */,
 				18B76CE42B91B69500F6A373 /* LoginVC.xib in Resources */,
@@ -1010,6 +1123,7 @@
 				18A6B2A82B91DC9F000E3209 /* RegisterVC.xib in Resources */,
 				18732E342BBAD374000C0CA8 /* CartVC.xib in Resources */,
 				18BA052D2BC02E3F0028AC93 /* RatingCollectionViewCell.xib in Resources */,
+				18A4EFE52BD7837B00B766CF /* RateNowVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1149,17 +1263,22 @@
 				18A01C7F2B959EF30033EF21 /* API Services.m in Sources */,
 				18B76CA32B91B05C00F6A373 /* AppDelegate.m in Sources */,
 				18A6B2B12B91EC50000E3209 /* Validation.m in Sources */,
+				18A4EFE92BD7838C00B766CF /* AddToCartVC.m in Sources */,
 				18B76CB42B91B05D00F6A373 /* main.m in Sources */,
 				18A01C792B9599470033EF21 /* API Manager.m in Sources */,
 				18BA051F2BC0244F0028AC93 /* ProductDetailsVC.m in Sources */,
 				18E029E22BBD60B50085A330 /* HomeService.m in Sources */,
 				18B76CE32B91B69500F6A373 /* LoginVC.m in Sources */,
+				18C786D12BD691B7006CF31E /* ProductDetailsImageCollectionViewCell.m in Sources */,
 				18A01C8A2B95CB580033EF21 /* LoginService.m in Sources */,
+				18BD58C52BD0EC7300CC6916 /* ProductDetailsTableViewCell.m in Sources */,
 				18E029CF2BBD32AD0085A330 /* HomeCategoriesTableViewCell.m in Sources */,
 				18BA05272BC024B00028AC93 /* ProductDetails.m in Sources */,
 				18A6B2A72B91DC9F000E3209 /* RegisterVC.m in Sources */,
 				18A0519B2BAD60C5004A02D7 /* RegisterService.m in Sources */,
+				18578B572BC42E10009C6585 /* ProductDetailsService.m in Sources */,
 				189E18702BC3F9C100944B13 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				18A4EFE42BD7837B00B766CF /* RateNowVC.m in Sources */,
 				18732E422BBAEBA6000C0CA8 /* BaseVC.m in Sources */,
 				18B76CE92B91B6C100F6A373 /* LoginViewModel.m in Sources */,
 				18BA052C2BC02E3F0028AC93 /* RatingCollectionViewCell.m in Sources */,
@@ -1169,6 +1288,7 @@
 				18BA05232BC024760028AC93 /* ProductDetailsViewModel.m in Sources */,
 				189D5E762BAC0050009FF741 /* RegisterModel.m in Sources */,
 				189E18712BC3F9C100944B13 /* NVActivityIndicatorView.swift in Sources */,
+				18C786CC2BD63CE7006CF31E /* ProductDetailsFooterView.m in Sources */,
 				18E029D92BBD3C9D0085A330 /* HomeViewModel.m in Sources */,
 				18BAF3A72BB2CBAC004D181E /* OTPVerificationVC.m in Sources */,
 				18732E332BBAD374000C0CA8 /* CartVC.m in Sources */,

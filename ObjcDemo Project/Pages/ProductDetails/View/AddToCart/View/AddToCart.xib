@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddToCartVC">
+            <connections>
+                <outlet property="btnAddToCart" destination="fd5-6l-MKj" id="d32-S4-Hgq"/>
+                <outlet property="btnClose" destination="N0X-2U-tEI" id="Ar7-Hm-myY"/>
+                <outlet property="lblEnterQuantity" destination="BUp-WE-tPh" id="atq-Zb-FDt"/>
+                <outlet property="lblProductName" destination="REO-O6-6Cw" id="ddx-bj-vek"/>
+                <outlet property="lblStepperValue" destination="Ew2-O1-jSs" id="VtM-iv-vra"/>
+                <outlet property="quantityStepper" destination="YWv-pr-1PS" id="vGb-Jq-M0a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJx-F5-SVK">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkj-aa-dWr">
+                            <rect key="frame" x="0.0" y="632.33333333333337" width="393" height="185.66666666666663"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0X-2U-tEI">
+                                    <rect key="frame" x="353" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="SZk-qD-SFk"/>
+                                        <constraint firstAttribute="width" constant="25" id="Z2H-3j-sBh"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color name="primary"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REO-O6-6Cw">
+                                    <rect key="frame" x="166.66666666666666" y="19.999999999999996" width="60" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="0Gk-uA-FUu">
+                                    <rect key="frame" x="30" y="83.666666666666629" width="333" height="32"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUp-WE-tPh">
+                                            <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="32"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-S2-G05">
+                                            <rect key="frame" x="190.33333333333337" y="0.0" width="142.66666666666663" height="32"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ew2-O1-jSs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="32"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YWv-pr-1PS">
+                                                    <rect key="frame" x="48.666666666666657" y="0.0" width="94" height="32"/>
+                                                </stepper>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd5-6l-MKj">
+                                    <rect key="frame" x="131.66666666666666" y="125.66666666666663" width="129.99999999999997" height="40"/>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="130" id="nLQ-3z-aZr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Add to Cart"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAddToCartTapped:" destination="-1" eventType="touchUpInside" id="2Sb-Ws-iXU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="REO-O6-6Cw" firstAttribute="centerX" secondItem="Nkj-aa-dWr" secondAttribute="centerX" id="E0l-fO-OIb"/>
+                                <constraint firstItem="REO-O6-6Cw" firstAttribute="top" secondItem="Nkj-aa-dWr" secondAttribute="top" constant="20" id="FVP-5i-KoL"/>
+                                <constraint firstItem="fd5-6l-MKj" firstAttribute="top" secondItem="0Gk-uA-FUu" secondAttribute="bottom" constant="10" id="G8s-1P-c34"/>
+                                <constraint firstAttribute="bottom" secondItem="fd5-6l-MKj" secondAttribute="bottom" constant="20" id="GMI-Ti-uGT"/>
+                                <constraint firstItem="fd5-6l-MKj" firstAttribute="centerX" secondItem="Nkj-aa-dWr" secondAttribute="centerX" id="Imh-T7-aYD"/>
+                                <constraint firstAttribute="trailing" secondItem="0Gk-uA-FUu" secondAttribute="trailing" constant="30" id="JDw-j7-QQh"/>
+                                <constraint firstItem="0Gk-uA-FUu" firstAttribute="top" secondItem="REO-O6-6Cw" secondAttribute="bottom" constant="30" id="Mxx-qS-ln8"/>
+                                <constraint firstItem="N0X-2U-tEI" firstAttribute="top" secondItem="Nkj-aa-dWr" secondAttribute="top" constant="15" id="Nu9-lx-mbL"/>
+                                <constraint firstAttribute="trailing" secondItem="N0X-2U-tEI" secondAttribute="trailing" constant="15" id="daT-uJ-kOh"/>
+                                <constraint firstItem="0Gk-uA-FUu" firstAttribute="leading" secondItem="Nkj-aa-dWr" secondAttribute="leading" constant="30" id="kVD-wZ-6PM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Nkj-aa-dWr" secondAttribute="bottom" id="Gs5-xC-Ok4"/>
+                        <constraint firstAttribute="trailing" secondItem="Nkj-aa-dWr" secondAttribute="trailing" id="X8r-wl-BsM"/>
+                        <constraint firstItem="Nkj-aa-dWr" firstAttribute="leading" secondItem="eJx-F5-SVK" secondAttribute="leading" id="h8j-cI-Jp0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eJx-F5-SVK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="126-dK-iIm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="eJx-F5-SVK" secondAttribute="trailing" id="FZW-Ex-dGo"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="eJx-F5-SVK" secondAttribute="bottom" id="btw-KJ-WxR"/>
+                <constraint firstItem="eJx-F5-SVK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zGC-jj-mGY"/>
+            </constraints>
+            <point key="canvasLocation" x="-7" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="primary">
+            <color red="0.35699999332427979" green="0.40799999237060547" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

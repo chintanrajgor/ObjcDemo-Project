@@ -6,10 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductDetails.h"
+#import "Protocols.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+//MARK: - ProductDetailsViewModel
 @interface ProductDetailsViewModel : NSObject
+
+- (void) getProductDetailsForProductId: (NSNumber*) productId;
+@property (weak,nonatomic) id<ResultMessageDelegate> resultMessageDelegate;
+@property (strong,nonatomic) ProductDetails *productDetailsData;
 
 @end
 

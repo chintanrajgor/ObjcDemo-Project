@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSString *userMsg;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithData:(NSData *)data error:(NSError **)error;
 @end
 
 

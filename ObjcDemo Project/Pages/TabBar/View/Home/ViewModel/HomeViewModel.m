@@ -7,13 +7,12 @@
 
 #import "HomeViewModel.h"
 #import "HomeService.h"
-
+//MARK: - HomeViewModel
 @implementation HomeViewModel
 
 Products *productList;
 dispatch_group_t group;
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super init];
     self.categoryIdDict = @{
         @1 : @"Table",
@@ -27,14 +26,11 @@ dispatch_group_t group;
 }
  
 - (void) callForGetProductList{
-//    self.categoryProductList = [[NSMutableArray alloc] init];
-    
     for (NSNumber *key in self.categoryIdDict) {
         dispatch_group_enter(group);
         [self getProductListForCategoryId:key];
     }
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        // This block will be executed when all tasks in the group have completed
         NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"CategoryId" ascending:YES];
         self.categoryProductList = (NSMutableArray *)[self.categoryProductList sortedArrayUsingDescriptors:@[sortDescriptor]];
         [self.resultMessageDelegate resultWithMessage:@"Products Fetched SuccessFully"];

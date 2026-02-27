@@ -9,6 +9,7 @@
 #import "RegisterVC.h"
 #import "HomeCategoriesTableViewCell.h"
 #import "RegisterHeaderView.h"
+#import "ProductDetailsVC.h"
 
 //MARK: - HomeVC
 @implementation HomeVC
@@ -46,10 +47,19 @@
     [self.VM callForGetProductList];
 }
 
+- (void)goToNextVCWithProductId: (NSNumber*)productId{
+    ProductDetailsVC *nextVC = [[ProductDetailsVC alloc] init];
+    nextVC.productId = productId;
+    [self.navigationController pushViewController:nextVC animated:YES];
+}
+
 //MARK: - TableView Functions
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     HomeCategoriesTableViewCell *categoryCell = [tableView dequeueReusableCellWithIdentifier:@"HomeCategoriesTableViewCell" forIndexPath:indexPath];
     [categoryCell configureCellWithProductList:self.VM.categoryProductList[indexPath.section][@"CategoryProducts"]];
+    categoryCell.cellTappedHandler = ^(NSNumber *productId){
+        [self goToNextVCWithProductId:productId];
+    };
     return  categoryCell;
 }
 
@@ -64,6 +74,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return self.view.frame.size.width/1.8;
 }
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     RegisterHeaderView *headerView = [[RegisterHeaderView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 30)];
     UILabel *headerLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 0, tableView.frame.size.width, 30)];

@@ -43,6 +43,10 @@
     return productListCell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    self.cellTappedHandler(self.productsList[indexPath.item].id);
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.productsList.count;
 }

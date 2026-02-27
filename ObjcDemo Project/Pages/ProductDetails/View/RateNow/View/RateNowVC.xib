@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RateNowVC">
+            <connections>
+                <outlet property="btnClose" destination="N6g-iu-0WD" id="7uA-LJ-gKZ"/>
+                <outlet property="btnRate" destination="0cR-UU-SDR" id="l0a-le-aY3"/>
+                <outlet property="lblProductName" destination="dw0-wk-3mZ" id="bFW-kN-frt"/>
+                <outlet property="ratingCollectionView" destination="ID8-6n-Fmd" id="Pvn-tM-OAL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1d4-kC-SCs">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppV-qK-XGc">
+                            <rect key="frame" x="0.0" y="634.33333333333337" width="393" height="183.66666666666663"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6g-iu-0WD">
+                                    <rect key="frame" x="353" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="eKY-wU-6CV"/>
+                                        <constraint firstAttribute="width" constant="25" id="hZx-DH-okc"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="xmark.circle.fill" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color name="primary"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnCloseTapped:" destination="-1" eventType="touchUpInside" id="Vpc-hx-3Ww"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw0-wk-3mZ">
+                                    <rect key="frame" x="166.66666666666666" y="19.999999999999996" width="60" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ID8-6n-Fmd">
+                                    <rect key="frame" x="30" y="63.666666666666629" width="333" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1Nx-gt-d7J"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aYW-dn-Ds6">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-UU-SDR">
+                                    <rect key="frame" x="151.66666666666666" y="123.66666666666663" width="90" height="40"/>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="IxL-tW-wuK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Rate"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnRateTapped:" destination="-1" eventType="touchUpInside" id="sIe-id-xk0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="N6g-iu-0WD" secondAttribute="trailing" constant="15" id="7Ei-65-au7"/>
+                                <constraint firstItem="dw0-wk-3mZ" firstAttribute="top" secondItem="ppV-qK-XGc" secondAttribute="top" constant="20" id="FcD-Ea-XcY"/>
+                                <constraint firstItem="0cR-UU-SDR" firstAttribute="centerX" secondItem="ppV-qK-XGc" secondAttribute="centerX" id="FhG-mE-TUT"/>
+                                <constraint firstItem="ID8-6n-Fmd" firstAttribute="leading" secondItem="ppV-qK-XGc" secondAttribute="leading" constant="30" id="GRB-wy-lD8"/>
+                                <constraint firstItem="0cR-UU-SDR" firstAttribute="top" secondItem="ID8-6n-Fmd" secondAttribute="bottom" constant="10" id="NKM-zo-m5t"/>
+                                <constraint firstItem="ID8-6n-Fmd" firstAttribute="top" secondItem="dw0-wk-3mZ" secondAttribute="bottom" constant="10" id="Nfk-Yp-w0f"/>
+                                <constraint firstAttribute="bottom" secondItem="0cR-UU-SDR" secondAttribute="bottom" constant="20" id="S4E-GQ-7To"/>
+                                <constraint firstItem="N6g-iu-0WD" firstAttribute="top" secondItem="ppV-qK-XGc" secondAttribute="top" constant="15" id="amg-i7-Jaz"/>
+                                <constraint firstAttribute="trailing" secondItem="ID8-6n-Fmd" secondAttribute="trailing" constant="30" id="rxO-OU-BKb"/>
+                                <constraint firstItem="dw0-wk-3mZ" firstAttribute="centerX" secondItem="ppV-qK-XGc" secondAttribute="centerX" id="s6x-DE-W6O"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ppV-qK-XGc" secondAttribute="trailing" id="4OE-eC-yrz"/>
+                        <constraint firstItem="ppV-qK-XGc" firstAttribute="leading" secondItem="1d4-kC-SCs" secondAttribute="leading" id="Vp9-4r-H2X"/>
+                        <constraint firstAttribute="bottom" secondItem="ppV-qK-XGc" secondAttribute="bottom" id="czz-YQ-Ggc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1d4-kC-SCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E6I-Hr-ME5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="1d4-kC-SCs" secondAttribute="bottom" id="NnE-7M-CYf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1d4-kC-SCs" secondAttribute="trailing" id="TUN-u8-zA3"/>
+                <constraint firstItem="1d4-kC-SCs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z3U-Iy-xaG"/>
+            </constraints>
+            <point key="canvasLocation" x="-7" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="primary">
+            <color red="0.35699999332427979" green="0.40799999237060547" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

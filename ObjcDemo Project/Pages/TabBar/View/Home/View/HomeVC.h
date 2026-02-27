@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setUpUI;
 - (void)setTableView;
 - (void)getProductList;
+- (void)goToNextVCWithProductId: (NSNumber*)productId;
 @end
 
 NS_ASSUME_NONNULL_END

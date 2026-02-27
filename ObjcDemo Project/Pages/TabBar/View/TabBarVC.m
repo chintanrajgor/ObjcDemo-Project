@@ -28,6 +28,7 @@ CustomTabBar *customTabBar;
 -(void) setNavBar{
     [self.navigationController setNavigationBarHidden:NO];
     self.title = @"NeoSTORE";
+    self.navigationItem.backButtonTitle = @"";
 }
 
 - (void)setTabbar{

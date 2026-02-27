@@ -9,19 +9,30 @@
 
 // ProductDetails
 @implementation ProductDetails
-- (instancetype)initWithDictionary:(NSDictionary *)dict {
+- (instancetype)initWithData:(NSData *)data error:(NSError **)error {
     self = [super init];
     if (self) {
-        _status = dict[@"status"];
-        _data = [[ProductDetailsData alloc] initWithDictionary:dict[@"data"]];
-        _message = dict[@"message"];
-        _userMsg = dict[@"user_msg"];
+        NSError *jsonError;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        if (jsonError) {
+            *error = jsonError;
+            return nil;
+        }
+
+        _status = json[@"status"];
+        _message = json[@"message"];
+        _userMsg = json[@"user_msg"];
+
+        NSDictionary *userDataArray = json[@"data"];
+
+        ProductDetailsData *productData = [[ProductDetailsData alloc] initWithDictionary:userDataArray];
+        _data = productData;
     }
     return self;
 }
 @end
 
-// ProductDetail
+// ProductDetailsData
 @implementation ProductDetailsData
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
     self = [super init];
